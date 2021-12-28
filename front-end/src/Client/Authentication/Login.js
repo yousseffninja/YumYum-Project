@@ -1,13 +1,20 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { Container } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
+import {LoginContext} from "./loginApi";
 import style from './Login.module.css'
 
 export default function Login() {
   const { register, handleSubmit, formState: { errors } } = useForm();
-  const onSubmit = data => console.log(data);
+  const {loginApi, login} = useContext(LoginContext);
+  const onSubmit = data =>{
+      loginApi(data.Email, data.password);
+      console.log(data)
+  };
   console.log(errors);
-  
+    if(login){
+        window.location.href = "/";
+    }
   return (
     <Container >
     <form className={style.form} onSubmit={handleSubmit(onSubmit)}>
