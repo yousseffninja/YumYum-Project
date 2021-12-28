@@ -1,0 +1,73 @@
+.btn{
+    background-color: rgb(115, 13, 13) !important;
+    color: white;
+    outline: none !important;
+    transition: all 1s ease-in-out !important;
+    margin:  0px 10px 10px;
+    border-color: red ;
+    box-shadow: none !important;
+}
+.container{
+    justify-content: center;
+    box-shadow:  red;
+    display: flex;
+    }
+    .card{
+        transition: all 0.5s ease-in-out;
+        display: block;
+        
+    }
+    .card:hover{
+        width: 400px;
+        transform: scale(1.1);
+    }
+    .img{
+        min-height: 200px;
+        max-height: 200px;
+        max-width: 100%;
+    }
+
+.btn:hover{
+    background-color: rgb(103, 5, 5) !important;
+    color: white !important;
+    
+}
+
+.btn:hover{
+    background-color: black !important;
+    color: yellow !important;
+    
+}
+.cardbody{
+    transition: all 1s ease-in-out !important;
+   
+
+}
+.cardtitle{
+    color: red;
+    max-height: 50px;
+    min-height: 50px;
+    overflow: hidden;
+}
+.card-body:hover{
+    color: white;
+    background-color: rgb(41, 18, 18);
+}
+    .cardtext{
+        max-height: 113px;
+        min-height: 113px;
+        overflow: hidden;
+
+    }
+
+.priccon{  
+    display: flex;
+    width: 100%;
+  
+  }
+  span{
+      width: 30%;
+      left: 60%;
+      text-align: center;
+      background-color: yellow;
+  }

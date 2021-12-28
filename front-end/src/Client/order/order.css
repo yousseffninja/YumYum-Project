@@ -1,0 +1,16 @@
+.btn-card{
+    width: 300px !important;
+    height: 70px !important;
+    margin: auto !important;
+    background-color: red;
+    color: white;
+    position: absolute;
+    left: 25%;
+}
+.container-order{
+    display: flex;
+   
+}
+.btnpar{
+    position: relative;
+}

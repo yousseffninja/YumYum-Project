@@ -1,0 +1,32 @@
+.search1{
+    width: 60%;
+    height: 90%;
+}
+.btnsearch{
+    width: 200px !important;
+    margin-right: 10px;
+    transition: all .5s ease-in !important;
+
+}
+.btnsearch:hover{
+    background-color: rgb(111, 13, 13) !important;
+
+}
+.navlink ,.dropdownitem{
+    transition: all .5s ease-in !important;
+}
+.navlink:hover {
+    background-color: rgb(117, 12, 12);
+    border-radius:30px ;
+    color: white ;
+}
+.dropdownitem:hover{
+    background-color: rgb(111, 13, 13) !important;
+    border-radius:30px ;
+    color: white;
+
+}
+.imgbaskat{
+    width: 100px !important;
+    height: 80px;
+}

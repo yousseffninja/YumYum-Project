@@ -1,0 +1,48 @@
+.home{
+    background-image:linear-gradient(rgba(0,0,0,0.5) ,rgba(0,0,0,0.5)) ,
+    url("./image3.jpg");
+    height: 450px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    width: 100%;
+}
+.header{
+    display: block;
+    font-size: 40px;
+    color: rgb(255, 255, 104);
+    position: relative;
+    left: 50%;
+    text-transform:uppercase;
+    top: 50%;
+    transform:translate(-50px , -50px) ;
+    justify-content: center;
+}
+.pra{
+    display: block;
+    color: white;
+    position: relative;
+    top:40%;
+    text-align: center;
+    
+}
+.btn{
+position: relative;
+top: 50%;
+left: 50%;
+transform:translate(-50px , -50px) ;
+color:red;
+background-color: white;
+width: 200px;
+height: 60px;
+border-radius: 10px;
+text-transform:capitalize;
+transition: all 0.5s ease-in ;
+}
+.btn:hover{
+    background-color: rgb(113, 5, 5);
+    color: white;
+}

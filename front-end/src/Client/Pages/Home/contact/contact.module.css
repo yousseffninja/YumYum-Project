@@ -1,0 +1,44 @@
+.contact{
+    background-color: white;
+    display: flex;
+}
+.contact .left img{
+    height: 100%;
+
+}
+.contact .left{
+    flex:1;
+
+}
+.contact .right{
+    flex:1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.contact .right h2{
+    font-size: 35px;
+}
+.contact .right form{
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact .right form input{
+    width: 300px;
+    height: 60px;
+    font-size: 14px;
+    
+}
+.contact .right form textarea{
+    width: 300px;
+    height: 200px;
+    margin:20px 0 ;
+}
+

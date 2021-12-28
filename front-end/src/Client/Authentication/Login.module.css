@@ -1,0 +1,66 @@
+.h1{
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 40px;
+    color: rgb(137, 14, 14);
+    text-align: center;
+}
+.label{
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    padding: 10px !important;
+    display: block;
+    text-align: left !important;
+}
+.form{
+    width: 60% !important;
+    margin: auto !important;
+    padding-top: 30px;
+  
+}
+
+.input{
+    padding-top: 20px;
+    justify-content: center !important;
+    flex-direction: column;
+    width: 90% !important;
+    text-align: left;
+    margin: 10px !important;
+}
+.btn{
+    background-color: rgb(148, 11, 11);
+    color: white;
+    padding: 10px;
+    width: 20%;
+    outline: none;
+    border-color: rgb(144, 0, 0);
+    text-align: center;
+    margin: auto !important;
+    justify-content: center !important;
+    left: 30% !important;
+    position: relative;
+    text-align: center;
+    transition: all 1s ease-in;
+}
+.btn:hover{
+    background-color: rgb(99, 12, 12);
+    border-radius: 20px;
+
+
+}
+.lin{
+    display: block;
+    padding: 20px;
+    color: red;
+    text-transform: capitalize;
+}
+.textarea{
+    padding-top: 20px;
+    justify-content: center !important;
+    flex-direction: column;
+    width: 90% !important;
+    text-align: left;
+    margin: 10px !important;
+
+}

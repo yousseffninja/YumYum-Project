@@ -1,0 +1,30 @@
+.container-admin{
+    display: flex;
+    width: 60%;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+}
+.dropdown1{
+    position: relative;
+    top: 50%;
+    transform: translate(-50 ,-50);
+    height: 100px;
+
+
+}
+.btn6{
+    width: 40%;
+    margin: 10px;
+    color: #000;
+}
+
+.btn2{
+    margin: auto;
+    display: block;
+    background-color: rgb(123, 6, 6);
+}
+.btn2:hover{
+    background-color: rgb(78, 6, 6);
+     color: white;
+}

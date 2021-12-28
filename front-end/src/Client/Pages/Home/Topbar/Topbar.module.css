@@ -1,0 +1,11 @@
+.container1{
+    display: flex;
+    font-weight: bold;
+}
+.nav1{
+    position: relative;
+    left: 50%;
+    color: red !important;
+    margin-top:30px ;
+    justify-content: center;
+}
