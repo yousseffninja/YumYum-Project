@@ -23,8 +23,7 @@
 }
 .container1{
     display: flex;
-    position: absolute;
-    height: 500px;
+    height: 400px;
 }
 .h1{
     justify-content: center;
@@ -41,14 +40,11 @@
     background-position: left center;
     display: block;
     color: rgb(84, 84, 84);
-    position: relative;
    text-align: left;
    width: 70%;
    line-height: 1.5;
-
-   padding: 20px;
+   padding: 10px;
    font-size: 24px;
-    padding: 10px;
     
 }
 .btn1{

@@ -16,9 +16,11 @@ import Update from "./Client/AdminArea/Product/Update";
 import DeleteCategory from "./Client/AdminArea/Category/deleteCategory";
 import UpdateCategory from "./Client/AdminArea/Category/UpdateCategory";
 import CreateCategory from "./Client/AdminArea/Category/CreateCategory";
-import Order from "./Client/order/order"
-import AboutUS from './Client/Pages/AboutUs/AboutUS'
+import Order from "./Client/order/order";
+import AboutUS from "./Client/Pages/AboutUs/AboutUS";
 import Cart from "./Client/Cart/Cart";
+import Footer from "./Client/Pages/Home/footer/footer";
+import Cheef from "./Client/Pages/cheef/cheef";
 //
 export default class App extends Component {
   render() {
@@ -30,64 +32,76 @@ export default class App extends Component {
           <Switch>
             <Route exact path="/">
               <Home />
+              <Footer />
             </Route>
             <Route exact path="/Cart">
-            <Navbarconb/>
-            <Cart/>
+              <Navbarconb />
+              <Cart />
+              <Footer />
             </Route>
-            <Route  path="/Order/:id">
-            <Navbarconb/>
-            <Order/>
-        </Route>
-        <Route exact path="/AboutUS">
-          <Navbarconb/>
-          <AboutUS />
-        </Route>
+            <Route path="/Order/:id">
+              <Navbarconb />
+              <Order />
+              <Footer />
+            </Route>
+            <Route exact path="/AboutUS">
+              <Navbarconb />
+              <AboutUS />
+              <Cheef/>
+              <Footer />
+
+            </Route>
             <Route exact path="/Login">
-            <Login/>
-        </Route>
-        <Route exact path="/SignUp">
-            <SignUp/>
-        </Route>
+              <Login />
+            </Route>
+            <Route exact path="/SignUp">
+              <SignUp />
+            </Route>
             <Route exact path="/Fastfood">
               <Navbarconb />
               <FastFood />
+              <Footer />
             </Route>
             <Route exact path="/Sweet">
-            <Navbarconb/>
-            <Sweets />
-        </Route>
-        <Route exact path="/AboutUs">
-          <Navbarconb/>
-          
-        </Route>
-        <Route exact path="/AdminArea">
-          <Navbarconb/>
-          <Adminarea/>
-        </Route>
-        <Route exact path="/deleteCategory">
-          <Navbarconb/>
-          <DeleteCategory/>
-        </Route>
-        <Route exact path="/CreateCategory">
-          <Navbarconb/>
-          <CreateCategory />
-        </Route>
-        <Route exact path="/UpdateCategory">
-          <Navbarconb/>
-          <UpdateCategory />
-        </Route>
-        <Route exact path="/UpdateProduct">
-          <Navbarconb/>
-          <Update />
-        </Route>
-        <Route exact path="/DeleteProduct">
-          <Navbarconb/>
-          < Delete/>
-        </Route><Route exact path="/CreateProduct">
-          <Navbarconb/>
-          <CreateProduct />
-        </Route>
+              <Navbarconb />
+              <Sweets />
+              <Footer />
+            </Route>
+           
+            <Route exact path="/AdminArea">
+              <Navbarconb />
+              <Adminarea />
+            </Route>
+            <Route exact path="/deleteCategory">
+              <Navbarconb />
+              <DeleteCategory />
+              <Footer />
+            </Route>
+            <Route exact path="/CreateCategory">
+              <Navbarconb />
+              <CreateCategory />
+              <Footer />
+            </Route>
+            <Route exact path="/UpdateCategory">
+              <Navbarconb />
+              <UpdateCategory />
+              <Footer />
+            </Route>
+            <Route exact path="/UpdateProduct">
+              <Navbarconb />
+              <Update />
+              <Footer />
+            </Route>
+            <Route exact path="/DeleteProduct">
+              <Navbarconb />
+              <Delete />
+              <Footer />
+            </Route>
+            <Route exact path="/CreateProduct">
+              <Navbarconb />
+              <CreateProduct />
+              <Footer />
+            </Route>
 
             <h2>meals app</h2>
           </Switch>

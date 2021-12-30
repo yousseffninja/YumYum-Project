@@ -10,8 +10,7 @@ const LoginProvider = (props)=>{
     });
     const [token, setToken] = useState(null);
     const [error, setError] = useState(null);
-    //
-    //
+
     const loginApi = (email , password)=>{
         axios.post("http://localhost:5000/user/login" , {
             email: email,

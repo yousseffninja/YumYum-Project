@@ -29,7 +29,6 @@ export default function Order() {
         <div className="col-6 btnpar">
           <h1>{menu.title}</h1>
           <p>{menu.desc}</p>
-          <input type="number" />
           <p>Price: {menu.price}</p>
 
           <a href="/Cart"><button className="btn-card"  >Add to Cart</button></a>

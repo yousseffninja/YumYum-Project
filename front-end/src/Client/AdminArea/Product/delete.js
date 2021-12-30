@@ -1,5 +1,6 @@
-import React from "react";
+import React, {useContext} from "react";
 import { useForm } from "react-hook-form";
+import {DeleteProductContext} from "./DeleteProductApi";
 import style from "../../Authentication/Login.module.css";
 
 function Delete() {
@@ -8,8 +9,16 @@ function Delete() {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const {deleteProductApi, deleteProduct} = useContext(DeleteProductContext);
+  const onSubmit = (data) => {
+      console.log(data)
+      deleteProductApi(data.product_id);
+  };
   console.log(errors);
+
+    if(deleteProduct){
+        window.location.href = "/";
+    }
 
   return (
     <form className={style.form} onSubmit={handleSubmit(onSubmit)}>
@@ -18,10 +27,10 @@ function Delete() {
       <div className="form-groub">
         <label className={style.label}>Product-id</label>
         <input
-          type="number"
+          type="text"
           placeholder="Product-id"
           className={style.input}
-          {...register("Product-id", {})}
+          {...register("product_id", {})}
         />
       </div>
 

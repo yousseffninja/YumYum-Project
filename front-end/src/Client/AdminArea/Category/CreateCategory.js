@@ -1,24 +1,33 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import { useForm } from 'react-hook-form';
+import {CreateCategoryContext} from "./CreateCategoryApi";
 import { Button ,Form } from 'react-bootstrap';
+import style from "../../Authentication/Login.module.css"
 
-import './Category.css';
 
 function CreateCategory() {
     const { register, handleSubmit, formState: { errors } } = useForm();
-    const onSubmit = data => console.log(data);
+    const {createCategoryApi, createCategory} = useContext(CreateCategoryContext)
+    const onSubmit = data => {
+        console.log(data);
+        createCategoryApi(data.name);
+    };
     console.log(errors);
+
+    if(createCategory){
+        window.location.href = "/";
+    }
     
     return (<div className='con-conta'>
-       <Form className='form2' onSubmit={handleSubmit(onSubmit)}>
+       <Form className={style.form}onSubmit={handleSubmit(onSubmit)}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label {...register("Category", {required: true, pattern: /^\S+@\S+$/i})}>Name</Form.Label>
-          <Form.Control type="email" placeholder="Name Category" />
-          
+          <Form.Label className={style.label} >Name</Form.Label>
+          <Form.Control type="text" placeholder="Name Category" {...register("name", {required: true, maxLength: 80})}/>
+
         </Form.Group>
-        <Button variant="primary" type="submit">
+        <a href="/"><Button className={"btn-primary btn-block " + style.btn} type="submit">
           Submit
-        </Button>
+        </Button></a>
       </Form>
       </div>
     )

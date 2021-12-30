@@ -1,5 +1,6 @@
-import React from "react";
+import React, {useContext} from "react";
 import { useForm } from "react-hook-form";
+import {CreateProductContext} from "./CreateProductApi";
 import style from "../../Authentication/Login.module.css";
 
 function CreateProduct() {
@@ -8,7 +9,11 @@ function CreateProduct() {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const {createProductApi, createProduct} = useContext(CreateProductContext)
+  const onSubmit = (data) => {
+      console.log(data)
+      createProductApi(data.product_id, data.title, data.price, data.description, data.images, data.category)
+  };
   console.log(errors);
 
   return (
@@ -21,7 +26,7 @@ function CreateProduct() {
           type="number"
           className={style.input}
           placeholder="Product-id"
-          {...register("Product-id", {})}
+          {...register("product_id", {})}
         />
       </div>
       <div className="form-groub">
@@ -30,7 +35,7 @@ function CreateProduct() {
           type="text"
           className={style.input}
           placeholder="Title"
-          {...register("Title", { required: true, pattern: /^\S+@\S+$/i })}
+          {...register("title", {})}
         />
       </div>
       <div className="form-groub">
@@ -39,7 +44,7 @@ function CreateProduct() {
           type="text"
           placeholder="Desc"
           className={style.textarea}
-          {...register("desc", { required: true, pattern: /^\S+@\S+$/i })}
+          {...register("description", {})}
         ></textarea>
       </div>
       <div className="form-groub">
@@ -48,18 +53,18 @@ function CreateProduct() {
           type="number"
           className={style.input}
           placeholder="Price"
-          {...register("Price", {})}
+          {...register("price", {})}
         />
-        <label>Image</label>
+        <label className={style.label}>Image</label>
 
-        <input type="file" className={style.input} placeholder="File" />
+        <input type="file" className={style.input} placeholder="File" {...register("images", {})} />
         <label className={style.label}>Category</label>
 
         <input
           type="text"
           className={style.input}
           placeholder="Category"
-          {...register("Category", { required: true, pattern: /^\S+@\S+$/i })}
+          {...register("category", {})}
         />
       </div>
       <input className={"btn-primary btn-block " + style.btn} type="submit" />

@@ -6,7 +6,12 @@ var { check, validationResult } = require('express-validator');
 
 const userCtrl = {
     register: async (req, res) => {
+        console.log(req.body.name)
+        console.log(req.body.email)
+        console.log(req.body.password)
+        //
         try {
+
             const errors = validationResult(req);
             if (!errors.isEmpty()) {
                 res.status(400).json({ "erorrs": errors.array() });
@@ -20,6 +25,7 @@ const userCtrl = {
                 return res.status(400).json({ msg: "Password is at least 6 characters long." })
 
             // Password Encryption
+            console.log(password);
             const passwordHash = await bcrypt.hash(password, 10)
             const newUser = new Users({
                 name, email, password: passwordHash
@@ -37,7 +43,7 @@ const userCtrl = {
                 path: '/user/refresh_token',
                 maxAge: 7 * 24 * 60 * 60 * 1000 // 7d
             })
-
+            //
             res.json({ accesstoken })
 
         } catch (err) {

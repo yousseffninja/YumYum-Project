@@ -1,0 +1,84 @@
+.testmonials{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.testmonials h1{
+    font-size: 30px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    color: red;
+}
+.testmonials .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testmonials .container .card{
+    width: 300px;
+    height: 85%;
+    border-radius:10px ;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    transition: all 1s ease;
+    margin-left: 5%;
+
+}
+.card:hover{
+    width: 400px;
+    transform: scale(1.1);
+}
+.testmonials .container .card .top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.testmonials .container .card .top .left{
+    height: 25px;
+}
+.testmonials .container .card .top .right{
+    height: 25px;
+
+}
+.testmonials .container .card .top .user{
+    width: 400px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 30px;
+    overflow: hidden;
+}
+.testmonials .container .card .center{
+    padding: 15px ;
+    margin: 30px 0;
+    border-radius: 10px;
+    background-color: rgb(231, 231, 231);
+    overflow: hidden;
+    font-size: 14px;
+}
+.testmonials .container .card .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+.bottom h3{
+    margin:     10px 0;
+    overflow: hidden;
+}
+.bottom h4{
+    color:rgb(115, 22, 6);
+    overflow: hidden;
+}

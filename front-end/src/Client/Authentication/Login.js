@@ -12,7 +12,7 @@ export default function Login() {
       console.log(data)
   };
   console.log(errors);
-    if(login){
+if(login){
         window.location.href = "/";
     }
   return (
@@ -28,7 +28,7 @@ export default function Login() {
                 <label className={style.label}>Password</label>
                       <input type="password" className={style.input} placeholder="password" {...register("password", {required: true, min: 8})} />
                       </div>
-                      <input className={"btn-primary btn-block " + style.btn} type="submit" />
+                     <a href='/'> <input className={"btn-primary btn-block " + style.btn} type="submit" /></a>
                 <a href='/SignUp' className={style.lin}>If you dont have account create one.</a>
     
     </form>

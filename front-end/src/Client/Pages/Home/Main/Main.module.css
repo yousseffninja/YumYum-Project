@@ -15,7 +15,7 @@
     font-size: 40px;
     color: rgb(255, 255, 104);
     position: relative;
-    left: 50%;
+    left: 46.5%;
     text-transform:uppercase;
     top: 50%;
     transform:translate(-50px , -50px) ;
@@ -32,15 +32,15 @@
 .btn{
 position: relative;
 top: 50%;
-left: 50%;
+left: 46.5%;
 transform:translate(-50px , -50px) ;
-color:red;
+color:rgb(165, 13, 13);
 background-color: white;
 width: 200px;
 height: 60px;
 border-radius: 10px;
 text-transform:capitalize;
-transition: all 0.5s ease-in ;
+transition: all 1s ease-in;
 }
 .btn:hover{
     background-color: rgb(113, 5, 5);

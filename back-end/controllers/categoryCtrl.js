@@ -40,6 +40,7 @@ const categoryCtrl = {
         }
     },
     updateCategory: async(req, res) =>{
+        console.log(req.body.name)
         try {
             const {name} = req.body;
             await Category.findOneAndUpdate({_id: req.params.id}, {name})

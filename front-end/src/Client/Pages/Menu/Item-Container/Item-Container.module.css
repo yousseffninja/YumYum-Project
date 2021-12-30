@@ -49,9 +49,9 @@
     min-height: 50px;
     overflow: hidden;
 }
-.card-body:hover{
-    color: white;
+.cardbody:hover{
     background-color: rgb(41, 18, 18);
+    color: white;
 }
     .cardtext{
         max-height: 113px;
@@ -70,4 +70,10 @@
       left: 60%;
       text-align: center;
       background-color: yellow;
+      height: 40px;
+      color: black;
+
+  }
+  .cardbody:hover span{
+      color: black;
   }
